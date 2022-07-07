@@ -51,6 +51,11 @@ function Editor2() {
         wrapperClassName="wrapper-class"
         editorClassName="editor-class"
         toolbarClassName="toolbar-class"
+        toolbar={{
+          textAlign: { inDropdown: true },
+          link: { inDropdown: true },
+          history: { inDropdown: true },
+        }}
       />
       <button onClick={() => saveContent(dataForStorage)}>
         Save to storage
